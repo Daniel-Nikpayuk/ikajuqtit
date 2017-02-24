@@ -1,0 +1,13 @@
+
+sifter y, z = { y }
+
+y : [ memory, 4 bytes, number, 15 ]
+
+//
+
+modifier N = [ memory, 4 bytes, number ]
+
+function square.x
+ square : N -> N
+ square(x) := x * x
+
