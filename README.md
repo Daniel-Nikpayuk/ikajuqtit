@@ -169,7 +169,7 @@ I even begin to describe my own.
 
 In contrast to formal language, I also take my influence from *natural* (organic) language.
 
-#### **Natural Language**
+#### **Humanities (Political Language)**
 
 What is natural language?  I'd say the answer to this suffers from complexity as well, though I will put forth my own theory.
 
@@ -199,9 +199,18 @@ fundamental support for everything else in the language. One looks to see how th
 effects the politics of any surrounding grammar after that. Patterns of sociology and politics should evidence themselves
 when looking at how language changes over time among other things.
 
-#### **Grammatical Case**
+#### **Linguistics**
 
-associations (words), attributes (equivalence relation), arrangement (ordered equivalence relation)
+Linguistics obvious offers the other main alternative to modelling natural language. Certainly the Humanities are not
+unrelated.
+
+phonetics -> morphology -> syntax -> semantics
+lexer (regular automata) -> parser (context free grammar) -> register machine (turing complete)
+
+##### **Grammatical Case**
+
+adjective: associations (words), attributes (equivalence relation), arrangement (ordered equivalence relation)
+adverb: connotations (words), manners (equivalence relation), selection (ordered equivalence relation)
 
 How to define a noun? It is a name with an identity, but an identity is defined as adjective + navigational space.
 It is its own sort of expression with environment needing evaluation.
@@ -209,13 +218,26 @@ It is its own sort of expression with environment needing evaluation.
 As to how this theory informs the formal grammar of a formal language will be elaborated upon in the following.
 Before that though, I should also explain how *interface design* is another influence:
 
-#### **Identity**
+#### **Signal Processing**
+
+information theory, complexity theory, structural vs functional compression. Structural/Functional paralleling Humanities.
+
+Part of the conceptualization of variables as filters comes from signal processing.
+
+##### **Identity**
+
+Identity is the intersection of these disparate fields and the core concept that holds this language together
+and furnished the key differences between it and other languages.
+
+noun is base, adjective is residual.
 
 Identity is nomadic.
 
 Identity as orientation.
 
 identity as sifter + navigational space.
+
+### **Design**
 
 #### **Interface Design**
 
@@ -231,14 +253,6 @@ don't seem to put as much effort into interface design of the language's grammar
 Well, it's one thing to make such a claim, but in reality, what does this even mean?
 
 descriptive language, navigation, interface design, neurons, place cells.
-
-#### **Signal Processing**
-
-information theory, complexity theory, structural vs functional compression. Structural/Functional paralleling Humanities.
-
-Part of the conceptualization of variables as filters comes from signal processing.
-
-### **Design**
 
 direct map to hardware, zero-overhead abstraction.
 
