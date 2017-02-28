@@ -11,3 +11,9 @@ function square.x
  square : N -> N
  square(x) := x * x
 
+sifter w =
+<
+	square(y)
+	y+y
+>
+
