@@ -1,7 +1,7 @@
 ikajuqtit
 =========
 
-The specification for a mathematically oriented programming language.
+The specification for an identity and transformation oriented programming language.
 
 ### **Why?**
 
@@ -64,8 +64,11 @@ expressive enough for me and I know I can do better.
      If you can filter and manipulate data as structures, why not filter and manipulate functions
      as structures too?
 
-3. **Translation**: This builds upon expressivity and comes from my influence as a mathematician
+3. **Transformation**: This builds upon expressivity and comes from my influence as a mathematician
    who has manipulated many many formulas and identities.
+
+4. **Multimedia**: Being able to change the perspective of the data you're looking at with the easy of mathematical
+   expressivity is a perfect fit for a general purpose multimedia programming language.
 
 At the heart of this is *translation*, and in particular translation of data structures. Again, this is a very
 mathematical way of thinking. In math you manipulate formulas and identities, changing structure but not content.
