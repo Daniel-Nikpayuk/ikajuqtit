@@ -1,7 +1,82 @@
-ikajuqtit
-=========
+**ikajuqtit**
+=============
 
-The specification for an identity and transformation oriented programming language.
+The specification for an identity oriented programming language privileging multimedia applications.
+
+## **Introduction**
+
+As there are many different languages out there already, let's get to the heart of the matter:
+*What does this language offer that others do not?*
+
+The quick answer:
+
+The number one feature of this language that differs from others is **type mutability**: The separation
+and modularization of type information from variable.  This is to say variables are fundamentally
+untyped but with the capacity to be assigned, reassigned, and (in general) have their type data mutated.
+
+This offers two main grammatical "feature" consequences that differ and may even be counter-intuitive
+in regards to other languages:
+
+1. **function weakening**: A linguistic pattern which runs through programming languages is this idea
+   of *semantic completeness*. This is to say a *word* has some meaning, a *phrase* has some meaning,
+   but only a *sentence* has full semantic meaning (which is what makes it a sentence in the first place).
+   Similarly in programming languages, functions *as code* are viewed to have full semantic meaning,
+   and so the grammar of these languages tend to only allow you to define a function in full.
+
+   This is an unnecessary expressive restriction, but a consequence of type mutability is it allows
+   a type safe way to describe subblocks of functions---reusable code which you might not want to define
+   as functions themselves, but which also can be used as building blocks to proper functions in application.
+
+2. **transform expressivity**: When you separate type data out from variables, it gives the opportunity
+   to build a sublanguage around the idea of data structures---which allows for abstract focus on the
+   *structure* aspect of data structures (instead of the content). This is to say, for example a sequence
+   of variables <x, y> in this language is not only defined as a variable itself, it can be viewed as an
+   abstract data structure.
+
+   Variables in this language don't actually point to anything the way they do in others, if you want a
+   variable to have data content, you describe that as part of the type assignment. This focus on structure
+   without concern for content allows us to compare and translate abstract data structures. This has natural
+   applications to multimedia as it allows for effective expressivity of formats and their conversions.
+
+## **Narrative Design**
+
+Upon first glance these core differentiating features might appear *incremental* or *reactive* in their designs.
+This is to say it could be argued the design of this language had started out from other languages (I admit I am
+heavily influenced by C++ and Haskell), and it is only looking to correct their deficits. *This is not the case*.
+
+In fact it is the other way around: I have started with a narrative design and only after its conceptualization
+have I looked at other languages to borrow what I thought was good. As such the intent of the bulk of
+*this document* is to explore this narrative.
+
+As for the narrative itself: The core idea that holds the entire design together is the philosophical and practical
+application of the concept of **identity**.
+
+## **Philosophical Design**
+
+The language described here will be called **qanik**, an Inuit word for *snow*. The Inuit word *ikajuqtit*
+(the title of this document) means *spirit helpers*, and as stated above is only meant to be a casual
+specification of the overall design of the language.
+
+As for *qanik*, the word *snow* gives an idea of the expressive intention of this language. As a mathematician,
+my favorite branch of math is *Topology* because it is a designer's language. Its conceptualization of space as
+open sets is highly expressive and intuitive: One is able to describe shapes by breaking down the world into small
+parts (open sets) and building those parts back up. If one breaks boulders down into fine grains, as cement one
+can build then back up into any shapes we desire.  Or, as is known in the Arctic, grains of ice (snow)
+can be built back up into a great many forms---to shape the elements of life and living itself.
+
+A major theme throughout the design of the language is the negotiation between specification and implementation,
+the negotiation between compile time and run time.
+
+Naturally these features raise a few questions, the biggest one being: Is such a language *type safe*?
+As of yet I don't have a formal grammar specification---the specification you're reading is an intuitive
+design specification---so I cannot yet prove it, but the key idea (I've taken from C++; itself not exactly
+type safe) is that *compile time* and *run time* are not the same thing: All this type logic is for the
+benefit of and use at compile time.
+
+During run time the computer doesn't care about your source code typology, it only sees the world in binary.
+This is to say, in the language descibed here you can write as much untyped code as you want---for your own
+expressive benefit---but at the end of the day if it doesn't pass its compile time safety inspection it won't
+compile.  Though this isn't new, this is an intended feature as well.
 
 ### **Why?**
 
@@ -78,7 +153,7 @@ as possible grammar of the actual language.
 
 ### **Motivation**
 
-The Inuit word *ikajuqtit* means **spirit helpers**. This is the name of the specification, the name of the language
+ This is the name of the specification, the name of the language
 itself will be *qanik*, an word for snow. Using Inuit words partly is cultural pride, but actually the nature
 of the Inuktitut language itself is in many ways analogous to the design of this programming language---seemed
 like a good fit.

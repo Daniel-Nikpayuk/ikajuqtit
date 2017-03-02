@@ -1,19 +1,22 @@
 
-sifter y, z = { y }
+#*
+ functions manipulate type info, not name info. What part of the type info stays the same, and what part changes?
+ partitioning the type info into what's constant and what's dynamic.
+*#
 
-y : [ memory, 4 bytes, number, 15 ]
+function square
+ . value -> value * value
 
-//
+###
 
-modifier N = [ memory, 4 bytes, number ]
+adjective N =
+{
+ ware: memory,
+ bytes: 4,
+ type: integer
+}
 
-function square.x
- square : N -> N
- square(x) := x * x
+sifter x @ N + {value: 15}
 
-sifter w =
-<
-	square(y)
-	y+y
->
+square(x) # N + {value: 225}
 

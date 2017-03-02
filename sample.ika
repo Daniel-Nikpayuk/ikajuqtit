@@ -1,0 +1,33 @@
+
+sifter y, z = { y }
+
+y : [
+ ware: memory,
+ bytes: 4,
+ type: number,
+ value: 15
+]
+
+//
+
+modifier N = [
+ ware: memory,
+ bytes: 4,
+ type: number
+]
+
+/*
+ functions manipulate type info, not name info. What part of the type info stays the same, and what part changes?
+ partitioning the type info into what's constant and what's dynamic.
+*/
+
+function square/value
+ square : N -> N
+ square(value) := value * value
+
+sifter w =
+<
+	square(y)
+	y+y
+>
+

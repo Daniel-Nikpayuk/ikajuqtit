@@ -1,0 +1,19 @@
+
+function factorial
+ . 0 -> 1
+ . n -> n * factorial(n-1)
+
+###
+
+modifier N =
+{
+ ware: memory,
+ bytes: 4,
+ type: integer
+}
+
+name x
+ @ N + {n: 15}
+
+factorial(x) # N + {n: 225}
+
