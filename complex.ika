@@ -1,0 +1,29 @@
+
+functional R =
+{
+	ware: memory,
+	type: real,
+	bytes: 4,
+	value
+}
+
+structural complex =
+<
+	x: R,
+	y: R
+>
+
+###
+
+operator complex u * complex v = complex
+@
+	x: u/x * v/x - u/y * v/y
+	y: u/x * v/y + u/y * v/x
+
+complex z @
+
+	x/value: 15
+	y/value: 2
+
+complex w = z*z
+
